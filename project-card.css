@@ -1,0 +1,71 @@
+.project-card {
+    display: grid;
+    gap: .25em 1em;
+    grid-template-columns: calc(156px * 2) 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+}
+
+.project-thumb {
+    cursor: pointer;
+    grid-column: 1;
+    grid-row: 1/4;
+    position: relative;
+}
+
+.has-demo::after {
+    background: linear-gradient(225deg, var(--euka-light), var(--euka-light) 10%, var(--black-94) 10%);
+    border: 1px solid;
+    color: var(--euka-light);
+    content: 'demo';
+    font-variant: small-caps;
+    height: 1em;
+	outline: 1px solid var(--black-94);
+    padding: 1px 4px 3px 4px;
+    position: absolute;
+    right: 3px;
+    text-align: right;
+    top: 3px;
+}
+
+.project-thumb img {
+	border-radius: .75em;
+	border-top-right-radius: 0;
+    display: block; /* prevents <a> extra height */
+}
+
+.project-title {
+    color: white;
+    font-size: 1.5em;
+    grid-column: 2/4;
+    grid-row: 1;
+}
+
+.project-desc {
+    align-self: center;
+    grid-column: 2/4;
+    grid-row: 2;
+    line-height: 1.625;
+    /* font-size * line-height * lines of text */
+    height: calc(1em * 1.625 * 3);
+    overflow-y: auto;
+}
+
+.project-tags {
+    align-self: center;
+    grid-column: 2/4;
+    grid-row: 3;
+}
+
+.project-tags li {
+    background: var(--white-95);
+    border-radius: .5em;
+    color: var(--black-94);
+    display: inline-block;
+    font-size: .875em;
+    font-variant: small-caps;
+    padding: .25em .5em;
+}
+
+.project-ref {
+    color: var(--euka-light);
+}
