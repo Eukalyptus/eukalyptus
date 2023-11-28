@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
-        <title>Eukalyptus</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="site.css" />
-        <link rel="stylesheet" href="project-card.css" />
+
+        <title>Eukalyptus</title>
+        <link rel="icon" type="image/x-icon" href="assets/tinnunculus-e.svg">
+
+        <link rel="stylesheet" href="assets/site.css" />
+        <link rel="stylesheet" href="assets/project-card.css" />
+
+        <link rel="stylesheet" href="assets/sub-1680.css" media="screen AND (min-width: 1440px) AND (max-width: 1679px)" />
+        <link rel="stylesheet" href="assets/sub-1440.css" media="screen AND (min-width: 1024px) AND (max-width: 1439px)" />
+        <link rel="stylesheet" href="assets/sub-1024.css" media="screen AND (min-width: 900px) AND (max-width: 1023px)" />
+        <link rel="stylesheet" href="assets/sub-900.css" media="screen AND (max-width: 799px)" />
 
         <script src="filter-by-input.js" type="module"></script>
     </head>
 
     <body>
         <header id="site-header">
-            <h1 id="site-title"><a href="./">Eukalyptus</a></h1>
+            <img id="site-logo" src="assets/tinnunculus-e.svg" alt="site logo" width="48" height="48">
+            <h1 id="site-title"><a href="./">Eukalyptus'</a></h1>
             <section id="tag-line">
                 various hobby projects
             </section>
             <label id="search">
                 <span id="search-icon">&#x1f50d;&#xfe0e;</span>
-                <input type="search" placeholder="&#9000; type to search &#9000;" />
+                <input type="search" placeholder="click/tap here or type" />
             </label>
         </header>
 
         <main>
-            <article id="anlaute" class="project-card">
-                <a href="/anlaute" class="project-thumb has-demo">
-                    <img src="assets/anlaute.svg" alt="logo">
-                </a>
+            <article id="anlaute" class="project-card no-info">
+                <img src="assets/anlaute.svg" alt="logo" class="project-thumb" width="350" height="175">
                 <h2 class="project-title">Deutsche Anlaute</h2>
                 <section class="project-desc">
                     <p>
                         Simple language training app for my two year old niece and nephew.
                     </p>
+                    <p>
+                        German Anlaut translates to initial&sol;onset sound (of a word or syllable).
+                    </p>
                 </section>
+                <a href="/anlaute" class="project-refs demo-ref">demo</a>
+                <a href="https://github.com/eukalyptus/anlaute" class="project-refs repo-ref">
+                    <img src="assets/github-icon.svg" alt="octocat" width="32" height="32">
+                </a>
                 <ul class="project-tags">
-                    <li>svg</li>
+                    <li>education</li>
                     <li>language</li>
                     <li>german</li>
+                    <li>svg generation</li>
+                    <li>unicode emoji</li>
                 </ul>
             </article>
         </main>
@@ -45,7 +61,7 @@
         <script type="module">
             import { init } from "./filter-by-input.js";
 
-            init()
+            init();
         </script>
     </body>
 </html>

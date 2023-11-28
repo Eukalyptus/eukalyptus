@@ -22,6 +22,8 @@ function init(event) {
 }
 
 function refocus(event) {
+    if (event.ctrlKey) return;
+
     // check for [space], [backspace], letters, numbers and some special chars
     const isValidKey = event.code === 'Space' || event.code === 'Backspace' || event.key.length === 1 && validKeys.test(event.key);
 
@@ -51,7 +53,7 @@ function filter(event) {
             hasNoMatch &= !(title.includes(term) || desc.includes(term) || tags.includes(term));
         });
 
-        $element.style.display = hasNoMatch ? 'none' : 'grid';
+        $element.style.display = hasNoMatch ? 'none' : '';
     });
 }
 

@@ -1,4 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
-    <path d="M.05.05h400v200H.05z" style="fill:#fc0;"/>
-    <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" style="font-size:120px; font-family:Roboto;">Aa</text>
+    <style>
+        text {
+            font-family:Roboto;
+            text-align: center;
+            text-anchor: middle;
+        }
+        #apple {
+            fill: #ff4040;
+            font-size: 150px;
+        }
+        #anlaut {
+            fill: white;
+            font-size: 100px;
+        }
+    </style>
+
+    <text id="apple" x="200" y="150">🍎︎</text>
+    <text id="anlaut" x="200" y="145">A</text>
 </svg>
