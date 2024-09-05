@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
     <style>
         text {
-            font-family:Roboto;
+            font-family: Roboto;
             text-align: center;
             text-anchor: middle;
         }

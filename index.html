@@ -10,58 +10,48 @@
 
         <link rel="stylesheet" href="assets/site.css" />
         <link rel="stylesheet" href="assets/project-card.css" />
-
-        <link rel="stylesheet" href="assets/sub-1680.css" media="screen AND (min-width: 1440px) AND (max-width: 1679px)" />
-        <link rel="stylesheet" href="assets/sub-1440.css" media="screen AND (min-width: 1024px) AND (max-width: 1439px)" />
-        <link rel="stylesheet" href="assets/sub-1024.css" media="screen AND (min-width: 900px) AND (max-width: 1023px)" />
-        <link rel="stylesheet" href="assets/sub-900.css" media="screen AND (max-width: 799px)" />
-
-        <script src="filter-by-input.js" type="module"></script>
     </head>
 
     <body>
-        <header id="site-header">
-            <img id="site-logo" src="assets/tinnunculus-e.svg" alt="site logo" width="48" height="48">
-            <h1 id="site-title"><a href="./">Eukalyptus'</a></h1>
-            <section id="tag-line">
-                various hobby projects
-            </section>
-            <label id="search">
-                <span id="search-icon">&#x1f50d;&#xfe0e;</span>
-                <input type="search" placeholder="click/tap here or type" />
-            </label>
-        </header>
-
         <main>
-            <article id="anlaute" class="project-card no-info">
-                <img src="assets/anlaute.svg" alt="logo" class="project-thumb" width="350" height="175">
+            <article id="eukalyptus" class="project-card">
+                <a href="./" class="project-thumb">
+                    <embed src="assets/eukalyptus.svg" alt="site logo">
+                </a>
+                <ul class="project-tags">
+                    <li>meta</li>
+                </ul>
+                <a href="https://github.com/eukalyptus/eukalyptus.github.io" class="repo-ref">
+                    <img src="assets/github-icon.svg" alt="octocat" width="32" height="32">
+                </a>
+            </article>
+        
+            <article id="anlaute" class="project-card">
+                <a href="/anlaute" class="project-thumb link-marker">
+                    <img src="assets/anlaute.svg" alt="logo">
+                </a>
                 <h2 class="project-title">Deutsche Anlaute</h2>
                 <section class="project-desc">
                     <p>
-                        Simple language training app for my two year old niece and nephew.
+                        Simple language training app for my siblings children.
                     </p>
                     <p>
-                        German Anlaut translates to initial&sol;onset sound (of a word or syllable).
+                        Anlaut translates to initial&sol;onset sound (of a word or syllable).
                     </p>
+                    <!-- <a href="/anlaute/about" class="info-ref link-marker">&hellip;</a> -->
                 </section>
-                <a href="/anlaute" class="project-refs demo-ref">demo</a>
-                <a href="https://github.com/eukalyptus/anlaute" class="project-refs repo-ref">
-                    <img src="assets/github-icon.svg" alt="octocat" width="32" height="32">
-                </a>
                 <ul class="project-tags">
                     <li>education</li>
                     <li>language</li>
                     <li>german</li>
                     <li>svg generation</li>
                     <li>unicode emoji</li>
+                    <li>11/23</li>
                 </ul>
+                <a href="https://github.com/eukalyptus/anlaute" class="repo-ref">
+                    <img src="assets/github-icon.svg" alt="octocat" width="32" height="32">
+                </a>
             </article>
         </main>
-
-        <script type="module">
-            import { init } from "./filter-by-input.js";
-
-            init();
-        </script>
     </body>
 </html>

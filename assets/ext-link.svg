@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+    <style>
+        .dark {
+            fill: #101010;
+        }
+        .green {
+            fill: #80c080;
+        }
+    </style>
+    <circle cx="8" cy="8" r="8" class="dark"/>
+    <circle cx="8" cy="8" r="6" class="green" />
+    <circle cx="8" cy="8" r="4" class="dark" />
+    <path d="m 8,0 h 8 v 8 l -2.146484,2.681641 -2.146485,-2.1464848 -3.1210935,3.1210938 -4.2421875,-4.2421875 3.1210938,-3.1210937 -2.1464844,-2.1464844 z" class="dark" />
+    <path d="m 8,2 h 6 v 6 l -2.292969,-2.2929688 -3.1210935,3.1210938 -1.4140625,-1.4140625 3.121094,-3.1210937 z" class="green" />
+</svg>

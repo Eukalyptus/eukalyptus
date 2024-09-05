@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+    <style>
+        text {
+            font-family: Roboto;
+        }
+    </style>
+
+    <image href="tinnunculus-e.svg" x="8" y="164" height="72" width="72" />
+    
+    <text x="80" y="206">
+        <tspan x="80" y="206" fill="#80c080" style="font-size:48px;">Eukalyptus'</tspan>
+        <tspan x="80" y="234" fill="#fff" style="font-size:24px;">various hobby projects</tspan>
+    </text>
+</svg>
